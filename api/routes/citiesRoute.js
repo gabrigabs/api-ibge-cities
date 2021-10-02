@@ -3,6 +3,6 @@ const CitiesController = require('../controllers/CitiesController');
 
 const router = Router();
 
-router.get('/cities', CitiesController.getCities);
+router.get('/api/city', CitiesController.getCities);
 
 module.exports = router;

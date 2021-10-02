@@ -1,12 +1,25 @@
-const axios = require('axios');
+const Models = require('../models/models');
+const models = new Models; 
 
 class Services{
 
     
     async getAllCities(){
-        console.log('teste');
-        const {data} = await axios('https://servicodados.ibge.gov.br/api/v1/localidades/municipios');
-        return data;
+        const data = await models.getData();
+        const dataFilter = [];
+        data.forEach((location) =>{
+            dataFilter.push({
+                id: location.id,
+                name: location.nome,
+                state: location.microrregiao.mesorregiao.UF.nome,
+                uf: location.microrregiao.mesorregiao.UF.sigla,
+                region:location.microrregiao.mesorregiao.UF.regiao.nome
+            })
+
+        })
+
+
+        return dataFilter;
     }
 
 }

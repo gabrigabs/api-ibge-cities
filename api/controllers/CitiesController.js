@@ -6,8 +6,6 @@ class CitiesController{
     static async getCities(req, res){
         try{
             const allCities = await services.getAllCities();
-            console.log('teste2');
-
             res.json(allCities);
             return res.status(200);
 
