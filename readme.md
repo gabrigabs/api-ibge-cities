@@ -15,7 +15,7 @@ Ao baixar a API realize o comando no terminal
 para instalar as dependências do projeto e logo após execute o comando para rodar a api que por padrão é
 
 ```RAW
-'node api/ibdex.js'
+'node api/index.js'
 ```
 e logo após isso você já pode realizar as requisições usando seu navegador ou o [POSTMAN](https://www.postman.com/) se preferir.
 
