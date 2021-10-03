@@ -8,10 +8,7 @@ class Services{
         if(uf !== undefined){
  
             const filterUf =  await formateDataService.formateData(); 
-             return filterUf.filter(location => location.uf === uf);
-
-
-
+            return filterUf.filter(location => location.uf === uf);
 
         }if(name !== undefined){
             const filterName = await formateDataService.formateData(); 

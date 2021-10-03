@@ -1,7 +1,7 @@
 const Models = require('../models/models');
 const models = new Models; 
 
-class FormateDataServices{
+class FormateDataService{
 
     
     async formateData(){
@@ -26,4 +26,4 @@ class FormateDataServices{
 
 
 
-module.exports = FormateDataServices;
+module.exports = FormateDataService;
