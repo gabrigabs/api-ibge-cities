@@ -6,6 +6,22 @@ Esta é uma api que consume os dados da [API externa de localizações do IBGE](
 
 Para a utilização da mesma é necessaria a instalação das dependencias [AXIOS](https://axios-http.com/) e [SEQUELIZE](https://sequelize.org/), também é necessario ter o [NODE.js](https://nodejs.org/en/) instalado na maquina.
 
+## Estrutura da API
+
+### API
+Pasta raiz que contém a index que roda o servidor express
+### Controllers
+Pasta que contém a classe CitiesControllers que recebe a data filtrada e realiza a checagem dos erros de uso
+### Models
+Pasta que contém a classe Models que é responsavel por pegar a data bruta da API externa do IBGE usando o módulo AXIOS
+### Routes
+Contem a index que usa o express para trazer os resultados em json e tambem usa a rota de Cities que é a rota /api/cities em que é o endereço que usamos para fazer as requisições
+### Services
+É a pasta que faz todo o trabalho de formatação da API do IBGE e a filtragem dos seus dados, a classe FormateDataServices pega os dados brutos da pasta de Models e a formata para o modelo da API e a pasta Services realiza a filtragem dos dados de acordo com os parametros de URL(Query Params).
+
+
+
+
 ## Passo a passo 
 
 Ao baixar a API realize o comando no terminal 
