@@ -17,7 +17,7 @@ Pasta que contém a classe Models que é responsavel por pegar a data bruta da A
 ### Routes
 Contem a index que usa o express para trazer os resultados em json e tambem usa a rota de Cities que é a rota /api/cities em que é o endereço que usamos para fazer as requisições
 ### Services
-É a pasta que faz todo o trabalho de formatação da API do IBGE e a filtragem dos seus dados, a classe FormateDataServices pega os dados brutos da pasta de Models e a formata para o modelo da API e a pasta Services realiza a filtragem dos dados de acordo com os parametros de URL(Query Params).
+É a pasta que faz todo o trabalho de formatação da API do IBGE e a filtragem dos seus dados, a classe FormateDataServices pega os dados brutos da pasta de Models e a formata para o modelo da API e a classe Services realiza a filtragem dos dados de acordo com os parametros de URL(Query Params).
 
 
 
